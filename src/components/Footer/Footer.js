@@ -1,0 +1,36 @@
+import React from "react";
+import {Link} from "react-router-dom";
+import * as styles from "./Footer.module.css"
+
+const Footer = () => {
+    return (
+        <nav className={`${styles.navbarWrapper} center`}>
+            <div className={`${styles.navbarColumn} center`}>
+                <div className={`${styles.navbarInner} center`}>
+                    <div className={`${styles.navLeft}`}>
+                        Legal
+                    </div>
+                    <div className={`${styles.navRight} center`}>
+                        <div className="center">
+                            <Link className={`${styles.navLink}`}>Terms of use</Link>
+                            <Link className={`${styles.navLink}`}>Privacy policy</Link>
+                        </div>
+                        <div>
+                            <span><a href="#facebook" className="fa fa-facebook-square"> </a></span>
+                            <span><a href="#linkedin" className="fa fa-twitter"> </a></span>
+                            <span><a href="#instagram" className="fa fa-instagram" style={{color: "black"}}> </a></span>
+                            <span><a href="#pinterest" className="fa fa-pinterest"> </a></span>
+                        </div>
+                    </div>
+
+                </div>
+                <div className={`${styles.footerText} center`}>
+                    <p>
+                        Apple and the Apple logo are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc. Android, Google Play and the Google Play logo are trademarks of Google LLC.
+                    </p>
+                </div>
+            </div>
+        </nav>
+    );
+};
+export default Footer

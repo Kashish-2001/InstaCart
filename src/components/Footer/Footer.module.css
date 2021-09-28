@@ -1,0 +1,41 @@
+.navbarWrapper {
+    width: 100%;
+    height: 10vh;
+}
+
+.navbarInner {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.navbarColumn {
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.navLeft {
+    width: 30%;
+    font-weight: bold;
+    color: #231F20;
+    font-size: 16px;
+}
+
+.navRight {
+    font-size: 14px;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.navLink {
+    margin-left: 20px;
+    color: #231F20;
+    font-weight: bold;
+}
+
+.footerText {
+    text-align: center;
+    color: lightslategrey;
+    font-size: 12px;
+}

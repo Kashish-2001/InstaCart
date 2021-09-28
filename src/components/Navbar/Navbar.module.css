@@ -1,7 +1,67 @@
-.imgWrapper{
-    width: 100px;
-    height: 100px;
+.navbarWrapper {
+    width: 100%;
+    height: 8vh;
+    /*position: absolute;*/
 }
-.navbar-wrapper{
 
+.navbarInner {
+    justify-content: space-between;
+    width: 95%;
+    height: 100%;
+    position: absolute;
+}
+
+.navLeft {
+    min-width: 10%;
+    /*position: relative;*/
+    /*width: 10%;*/
+}
+
+.navRight {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navLinksWrapper {
+    display: flex;
+}
+
+.nav {
+    color: grey;
+    font-weight: 600;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.nav:hover{
+    color: #343538;
+}
+
+.verticalLine {
+    border-left: 3px solid #dadada;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.imageWrapper {
+    width: 80%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.login {
+    color: #343538;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.signup {
+    padding: 0.5rem 1rem;
+    border-radius: 70px;
+    background: #0aad0a;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 25px;
+    cursor: pointer;
 }
