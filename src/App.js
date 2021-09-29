@@ -4,8 +4,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 // Components import
 import Navbar from "./components/Navbar/Navbar";
 import NavbarResponsive from "./components/NavbarResponsive/NavbarResponsive";
-import Hero from "./components/Hero/Hero";
-import Footer from "./components/Footer/Footer";
+// import Hero from "./components/Hero/Hero";
+// import Footer from "./components/Footer/Footer";
 
 const App = () => {
   const [hamActive, setHamActive] = useState(false);
