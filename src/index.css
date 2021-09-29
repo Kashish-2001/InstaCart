@@ -14,11 +14,9 @@ a {
   text-decoration: none;
 }
 
-li{
+li {
   list-style: none;
 }
-
-
 
 .center {
   display: flex;

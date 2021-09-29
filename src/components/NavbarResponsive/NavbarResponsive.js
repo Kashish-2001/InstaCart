@@ -2,9 +2,9 @@ import * as styles from "../Navbar/Navbar.module.css";
 import { Link } from "react-router-dom";
 
 const NavbarResponsive = ({ hamActive }) => {
-    return (
-      <div className={`${styles.navResWrapper} ${hamActive && styles.open}`}>
-        <div className={styles.navResInner}>
+  return (
+    <div className={`${styles.navResWrapper} ${hamActive && styles.open}`}>
+      <div className={styles.navResInner}>
         <ul className={`${styles.navResLinks}`}>
           <li>
             <Link to="/" className={`${styles.navR} center`}>
@@ -29,8 +29,8 @@ const NavbarResponsive = ({ hamActive }) => {
           <option value="IN">India </option>
         </select>
       </div>
-      </div>
-    );
+    </div>
+  );
 };
 
 export default NavbarResponsive;

@@ -1,7 +1,6 @@
 import * as styles from "./Hero.module.css";
 
 const Hero = () => {
-
   return (
     <div className={`${styles.heroWrapper} center`}>
       <select className={styles.dropDown}>
@@ -13,7 +12,7 @@ const Hero = () => {
         <h2 className={styles.headerText}>
           Order groceries for delivery
           <br />
-           or pickup today
+          or pickup today
         </h2>
         <div>
           <p>Whatever you want from local stores, brought right to your door</p>

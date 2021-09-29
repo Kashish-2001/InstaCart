@@ -5,8 +5,9 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import NavbarResponsive from "./components/NavbarResponsive/NavbarResponsive";
 import Hero from "./components/Hero/Hero";
-import Features from "./components/Features/Features"
-// import Footer from "./components/Footer/Footer";
+import Features from "./components/Features/Features";
+import Growth from "./components/Growth/Growth";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   const [hamActive, setHamActive] = useState(false);
@@ -16,11 +17,14 @@ const App = () => {
       <Router>
         <Navbar hamActive={hamActive} setHamActive={setHamActive} />
         <NavbarResponsive hamActive={hamActive} />
-         <Hero />
-         <Features/>
-        {/*<br />*/}
-        {/*<hr className="hrFooter" />*/}
-        {/*<Footer />*/}
+        <Hero />
+        <Features />
+        <Growth />
+        <br />
+        <br />
+        <br />
+        <hr className="hrFooter" />
+        <Footer />
       </Router>
     </div>
   );
