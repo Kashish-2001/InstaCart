@@ -1,6 +1,7 @@
 import * as styles from "./Hero.module.css";
 
 const Hero = () => {
+
   return (
     <div className={`${styles.heroWrapper} center`}>
       <select className={styles.dropDown}>
