@@ -1,17 +1,19 @@
 .navbarWrapper {
   width: 100%;
-  height: 8vh;
+  height: 10vh;
+  z-index: 10000;
+  position: relative;
 }
 
 .navbarInner {
   justify-content: space-between;
-  width: 95%;
+  margin: 0 50px;
+  width: 100%;
   height: 100%;
-  position: absolute;
 }
 
 .navLeft {
-  min-width: 10%;
+  min-width: 200px;
 }
 
 .navRight {
@@ -21,6 +23,7 @@
 
 .navLinksWrapper {
   display: flex;
+  width: 400px;
 }
 
 .nav {
@@ -39,9 +42,8 @@
   margin-right: 10px;
 }
 
-.imageWrapper {
+.brand {
   width: 80%;
-  height: 50%;
   cursor: pointer;
 }
 
@@ -53,8 +55,8 @@
 }
 
 .signup {
-  padding: 0.75rem 0.75rem;
-  border-radius: 70px;
+  padding: 0.75rem;
+  border-radius: 50px;
   background: #0aad0a;
   color: white;
   font-weight: bold;
@@ -87,7 +89,7 @@
   height: 2px;
   background: #1d3964;
   border-radius: 1px;
-  transition: 400ms background 0ms, 400ms transform 0ms;
+  /* transition: 400ms background 0ms, 400ms transform 0ms; */
 }
 
 .hamburgerLines::before,
@@ -99,7 +101,7 @@
   border-radius: 1px;
   background: #1d3964;
   position: relative;
-  transition: 400ms background 0ms, 400ms transform 400ms;
+  /* transition: 400ms background 0ms, 400ms transform 400ms; */
 }
 
 .hamburgerLines::before {
@@ -107,27 +109,32 @@
 }
 .hamburgerLines::after {
   bottom: -3px;
-  opacity: 1;
-  transition: 400ms opacity 600ms;
+  /* opacity: 1; */
+  /* transition: 400ms opacity 600ms; */
 }
 .hamburger.active span {
   transform: rotate(135deg);
-  transition: 400ms transform 400ms, 400ms background 400ms;
+  /* transition: 400ms transform 400ms, 400ms background 400ms; */
 }
 .hamburger.active span::before {
   transform: rotate(90deg) translatex(5px);
-  transition: 400ms transform 0ms, 400ms background 400ms;
+  /* transition: 400ms transform 0ms, 400ms background 400ms; */
 }
 .hamburger.active span::after {
   opacity: 0;
-  transition: 400ms opacity 0ms;
+  /* transition: 400ms opacity 0ms; */
 }
 
 /*NAVBAR RESPONSIVE*/
 .navResWrapper {
+  position: absolute;
+  top: 12vh;
+  left: 0;
   width: 100%;
-  height: 100vh;
+  height: 88vh;
   display: none;
+  background: white;
+  z-index: 1000;
   flex-direction: column;
   list-style-type: none;
 }
@@ -136,40 +143,38 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /*position: absolute;*/
-  /*top: 0;*/
-  /*left: 0;*/
-  /*z-index: 100000;*/
-  /*transform: translateX(-100%);*/
-  /*transition: all 0.5s ease-out;*/
+  margin-left: 5px;
+  margin-top: 5px;
 }
 .navR {
-  /*margin-top: 10px;*/
-  padding: 20px;
-  font-size: 20px;
+  margin: 15px 0;
+  font-size: 1.25rem;
   font-weight: bold;
+  color: #343538;
 }
 
-/*.navResLinks .hrNav{*/
-/*  background: dimgray;*/
-/*  width: 90%;*/
-/*  height: 2px;*/
-/*  margin: 30px;*/
-/*}*/
+.navResInner {
+  margin: 0 15px;
+  overflow: hidden;
+}
 
 .navRdropDown {
-  padding: 20px;
-  margin: 2px;
-  /*border: none;*/
+  padding: 0 0;
+  width: 100%;
+  margin: 10px 0;
+  background: white;
+  border: none;
   outline: none;
+  font-size: 1rem;
+}
+
+.open {
+  display: flex;
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 800px) {
+@media screen and (max-width: 880px) {
   .hamburger {
-    display: flex;
-  }
-  .navResWrapper {
     display: flex;
   }
   .navLinksWrapper {
@@ -183,5 +188,25 @@
   }
   .navbarWrapper {
     box-shadow: 5px 2px 15px #cecece;
+  }
+  .navbarInner {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .signup,
+  .login {
+    font-size: 14px;
+  }
+  .signup {
+    margin-left: 10px;
+  }
+
+  .navLeft {
+    min-width: 150px;
+  }
+  .navbarInner {
+    overflow: hidden;
   }
 }

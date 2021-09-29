@@ -2,10 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  font-family: "Poppins 500", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
   color: #353839;
 }
+
+/* utilities */
+a {
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+
 
 .center {
   display: flex;
@@ -13,6 +26,10 @@
   align-items: center;
 }
 
+/* App.js */
+.App {
+  position: relative;
+}
 .hrFooter {
   border-top: 1px solid #dadada;
   width: 55%;

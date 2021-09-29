@@ -2,9 +2,9 @@ import * as styles from "../Navbar/Navbar.module.css";
 import { Link } from "react-router-dom";
 
 const NavbarResponsive = ({ hamActive }) => {
-  if (hamActive)
     return (
-      <div className={`${styles.navResWrapper}`}>
+      <div className={`${styles.navResWrapper} ${hamActive && styles.open}`}>
+        <div className={styles.navResInner}>
         <ul className={`${styles.navResLinks}`}>
           <li>
             <Link to="/" className={`${styles.navR} center`}>
@@ -22,11 +22,6 @@ const NavbarResponsive = ({ hamActive }) => {
             </Link>
           </li>
         </ul>
-
-        {/*<div>*/}
-        {/*    <span className={styles.hrNav}></span>*/}
-        {/*</div>*/}
-
         <select className={styles.navRdropDown} name="" id="">
           <span className="flag-icon flag-icon-us"></span>{" "}
           <option value="US">United States</option>
@@ -34,8 +29,8 @@ const NavbarResponsive = ({ hamActive }) => {
           <option value="IN">India </option>
         </select>
       </div>
+      </div>
     );
-  return null;
 };
 
 export default NavbarResponsive;

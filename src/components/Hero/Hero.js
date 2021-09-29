@@ -5,13 +5,15 @@ const Hero = () => {
     <div className={`${styles.heroWrapper} center`}>
       <select className={styles.dropDown}>
         {/*<span className="flag-icon flag-icon-us">US</span>*/}
-        <option data-icon="fa fa-facebook">US</option>
-        <option data-icon="fa fa-facebook">IN</option>
+        <option value="US">US</option>
+        <option value="IN">IN</option>
       </select>
       <div className={`${styles.heroInner}`}>
-        <div className={styles.headerText}>
-          Order groceries for delivery or pickup today
-        </div>
+        <h2 className={styles.headerText}>
+          Order groceries for delivery
+          <br />
+           or pickup today
+        </h2>
         <div>
           <p>Whatever you want from local stores, brought right to your door</p>
         </div>
