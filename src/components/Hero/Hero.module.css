@@ -5,6 +5,7 @@
   background: #deedd6;
   position: relative;
   justify-content: flex-start;
+  /*z-index: -1;*/
 }
 
 .heroInner {

@@ -128,10 +128,10 @@
 /*NAVBAR RESPONSIVE*/
 .navResWrapper {
   position: absolute;
-  top: 12vh;
+  top: 10vh;
   left: 0;
   width: 100%;
-  height: 88vh;
+  height: 90vh;
   display: none;
   background: white;
   z-index: 1000;
@@ -187,7 +187,8 @@
     width: 300px;
   }
   .navbarWrapper {
-    box-shadow: 5px 2px 15px #cecece;
+    /*box-shadow: 5px 2px 15px #cecece;*/
+    box-shadow: 5px 2px 25px #cecece;
   }
   .navbarInner {
     margin: 0 10px;
