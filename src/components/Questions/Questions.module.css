@@ -1,0 +1,45 @@
+.QuestionWrapper{
+    flex-direction: column;
+}
+
+.QuestionsHeading{
+    font-size: 1.8rem;
+    margin: 40px 0;
+}
+
+.QuestionsList{
+    flex-direction: column;
+    width: 1000px;
+}
+
+.QuestionBox{
+    padding: 25px 0;
+    width: 100%;
+    color: rgba(52, 53, 56, 0.8);
+    border-bottom: 0.0001px solid rgba(52, 53, 56, 0.1);
+}
+
+.questionBoxInner{
+    justify-content: space-between;
+}
+.sign{
+    font-size: 1.5rem;
+}
+
+.question{
+    padding-right: 300px;
+    font-size: 1.6rem;
+}
+
+.answers{
+    margin-top: 20px;
+    display: none;
+}
+
+.open{
+    display: flex;
+}
+
+.hide{
+    display: none;
+}

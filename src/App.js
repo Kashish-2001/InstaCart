@@ -7,6 +7,7 @@ import NavbarResponsive from "./components/NavbarResponsive/NavbarResponsive";
 import Hero from "./components/Hero/Hero";
 import Features from "./components/Features/Features";
 import Growth from "./components/Growth/Growth";
+import Questions from "./components/Questions/Questions"
 import Footer from "./components/Footer/Footer";
 
 const App = () => {
@@ -20,10 +21,11 @@ const App = () => {
         <Hero />
         <Features />
         <Growth />
+        <Questions/>
         <br />
         <br />
         <br />
-        <hr className="hrFooter" />
+        {/*<hr className="hrFooter" />*/}
         <Footer />
       </Router>
     </div>
