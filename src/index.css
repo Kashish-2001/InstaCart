@@ -28,11 +28,6 @@ li {
 .App {
   position: relative;
 }
-.hrFooter {
-  border-top: 1px solid #dadada;
-  width: 55%;
-  margin: auto;
-}
 
 .fab {
   margin: 10px;

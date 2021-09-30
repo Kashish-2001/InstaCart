@@ -1,31 +1,29 @@
 .navbarWrapper {
   width: 100%;
-  height: 10vh;
-  margin: 30px 0;
+  height: max(12vh, 120px);
+  margin: 80px 0 25px 0;
+}
+
+
+.navbarColumn {
+  border-top: 1px solid rgba(52, 53, 56, 0.1);
+  flex-direction: column;
+  width: 1250px;
+  height: 100%;
 }
 
 .navbarInner {
-  /*border-top: 0.0001px solid rgba(52, 53, 56, 0.1);*/
-  width: 100%;
-  height: 100%;
-  justify-content: space-between;
-}
-
-.navbarColumn {
-  width: 50%;
-  height: 100%;
-  flex-direction: column;
+  margin-top: 30px;
+  width: 90%;
 }
 
 .navLeft {
   width: 30%;
-  font-weight: bold;
+  font-weight: 500;
   color: #231f20;
-  font-size: 16px;
 }
 
 .navRight {
-  font-size: 14px;
   width: 70%;
   justify-content: space-between;
 }
@@ -33,10 +31,14 @@
 .navLink {
   margin-left: 20px;
   color: #231f20;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .footerText {
+
+  width: 80%;
+  height: 100%;
+
   text-align: center;
   color: lightslategrey;
   font-size: 12px;
