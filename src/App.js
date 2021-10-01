@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
 
 // Components import
 import Navbar from "./components/Navbar/Navbar";
@@ -7,7 +6,7 @@ import NavbarResponsive from "./components/NavbarResponsive/NavbarResponsive";
 import Hero from "./components/Hero/Hero";
 import Features from "./components/Features/Features";
 import Growth from "./components/Growth/Growth";
-// import Questions from "./components/Questions/Questions";
+import Questions from "./components/Questions/Questions";
 // import Programs from "./components/Programs/Programs";
 // import Footer from "./components/Footer/Footer";
 
@@ -20,22 +19,15 @@ const App = () => {
 
   return (
     <div className="App">
-      <Router>
-        <Navbar hamActive={hamActive} setHamActive={setHamActive} />
-        <NavbarResponsive hamActive={hamActive} />
-        <Hero />
-        <Features />
-        <Growth />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        {/*<Questions/>*/}
-        {/*<Programs programs={programs_user}/>*/}
-        {/*<Programs programs={programs_shopper}/>*/}
-        {/*<Footer />*/}
-      </Router>
+      <Navbar hamActive={hamActive} setHamActive={setHamActive} />
+      <NavbarResponsive hamActive={hamActive} />
+      <Hero />
+      <Features />
+      <Growth />
+      <Questions />
+       {/*<Programs programs={programs_user} />*/}
+       {/*<Programs programs={programs_shopper} />*/}
+       {/*<Footer />*/}
     </div>
   );
 };

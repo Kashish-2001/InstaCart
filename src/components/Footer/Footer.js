@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import * as styles from "./Footer.module.css";
 
 const Footer = () => {
@@ -10,8 +9,8 @@ const Footer = () => {
           <div className={`${styles.navLeft}`}>Legal</div>
           <div className={`${styles.navRight} center`}>
             <div className="center">
-              <Link className={`${styles.navLink}`}>Terms of use</Link>
-              <Link className={`${styles.navLink}`}>Privacy policy</Link>
+              <a href="/" className={`${styles.navLink}`}>Terms of use</a>
+              <a href="/" className={`${styles.navLink}`}>Privacy policy</a>
             </div>
             <div>
               <span>

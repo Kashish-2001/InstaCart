@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import * as styles from "./Navbar.module.css";
 
 const Navbar = ({ hamActive, setHamActive }) => {
@@ -24,18 +23,18 @@ const Navbar = ({ hamActive, setHamActive }) => {
         <div className={`${styles.navRight} center`}>
           <div className={styles.navLinksWrapper}>
             <div className={styles.verticalLine}> </div>
-            <Link to="/" className={`${styles.nav} center`}>
+            <a href="/" className={`${styles.nav} center`}>
               Departments
-            </Link>
-            <Link to="/" className={`${styles.nav} center`}>
+            </a>
+            <a href="/" className={`${styles.nav} center`}>
               More ways to shop
-            </Link>
-            <Link to="/" className={`${styles.nav} center`}>
+            </a>
+            <a href="/" className={`${styles.nav} center`}>
               Help
-            </Link>
+            </a>
           </div>
           <div>
-            <Link className={styles.login}>Log in</Link>
+            <a href="/" className={styles.login}>Log in</a>
             <button className={styles.signup}>Sign Up</button>
           </div>
         </div>

@@ -4,7 +4,6 @@
   margin: 80px 0 25px 0;
 }
 
-
 .navbarColumn {
   border-top: 1px solid rgba(52, 53, 56, 0.1);
   flex-direction: column;
@@ -35,7 +34,6 @@
 }
 
 .footerText {
-
   width: 80%;
   height: 100%;
 

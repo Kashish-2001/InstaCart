@@ -1,16 +1,17 @@
-.QuestionWrapper {
+.QuestionsWrapperInner {
+  width: 1100px;
   flex-direction: column;
-  margin: 30px 0;
 }
 
 .QuestionsHeading {
+  text-align: center;
   font-size: 1.8rem;
   margin: 40px 0;
 }
 
 .QuestionsList {
   flex-direction: column;
-  width: 1000px;
+  width: 90%;
 }
 
 .QuestionBox {
@@ -28,7 +29,7 @@
 }
 
 .question {
-  padding-right: 300px;
+  padding-right: min(300px, 20%);
   font-size: 1.6rem;
 }
 
@@ -43,4 +44,19 @@
 
 .hide {
   display: none;
+}
+
+@media (max-width: 1200px) {
+  .QuestionsWrapperInner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .question {
+    font-size: 1.25rem;
+  }
+  .QuestionsHeading {
+    font-size: 1.5rem;
+  }
 }

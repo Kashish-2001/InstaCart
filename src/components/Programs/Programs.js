@@ -1,5 +1,4 @@
 import { Fragment } from "react";
-import { Link } from "react-router-dom";
 import * as styles from "./Programs.module.css";
 
 const iosLogo =
@@ -37,7 +36,7 @@ const Programs = ({ programs }) => {
                 {body.map((item) => {
                   return (
                     <Fragment>
-                      <Link className={styles.programsBoxLink}>{item}</Link>
+                      <a href="/" className={styles.programsBoxLink}>{item}</a>
                     </Fragment>
                   );
                 })}

@@ -5,11 +5,9 @@ const GrowthBox = ({ field, description }) => {
   const [click, setClick] = useState(false);
 
   return (
-    <div className={styles.growthDiv}>
+    <div onClick={() => setClick(!click)} className={styles.growthDiv}>
       <Fragment>
-        <div onClick={() => setClick(!click)} className={styles.growthField}>
-          {field}
-        </div>
+        <div className={styles.growthField}>{field}</div>
         <div className={`${styles.growthDes} ${click && styles.open}`}>
           {description}
         </div>
