@@ -4,7 +4,6 @@ const Hero = () => {
   return (
     <div className={`${styles.heroWrapper} center`}>
       <select className={styles.dropDown}>
-        {/*<span className="flag-icon flag-icon-us">US</span>*/}
         <option value="US">US</option>
         <option value="IN">IN</option>
       </select>

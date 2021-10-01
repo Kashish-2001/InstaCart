@@ -1,6 +1,6 @@
 import * as styles from "./Questions.module.css";
 import { questions } from "../../constants/questions";
-import QuestionBox from "./QuestionBox";
+import Accordion from "../utils/Accordion";
 
 const Questions = () => {
   return (
@@ -11,7 +11,15 @@ const Questions = () => {
         </div>
         <div className={`${styles.QuestionsList} center`}>
           {questions.map(({ question, answer }) => {
-            return <QuestionBox question={question} answer={answer} />;
+            return (
+              <Accordion
+                isUpper={true}
+                title={question}
+                content={answer}
+                iconOpen="plus"
+                iconClose="minus"
+              />
+            );
           })}
         </div>
       </div>

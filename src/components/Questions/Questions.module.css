@@ -14,49 +14,8 @@
   width: 90%;
 }
 
-.QuestionBox {
-  padding: 25px 0;
-  width: 100%;
-  color: rgba(52, 53, 56, 0.8);
-  border-bottom: 1px solid rgba(52, 53, 56, 0.1);
-}
-
-.questionBoxInner {
-  justify-content: space-between;
-}
-.sign {
-  font-size: 1.5rem;
-}
-
-.question {
-  padding-right: min(300px, 20%);
-  font-size: 1.6rem;
-}
-
-.answers {
-  margin-top: 20px;
-  display: none;
-}
-
-.open {
-  display: flex;
-}
-
-.hide {
-  display: none;
-}
-
 @media (max-width: 1200px) {
   .QuestionsWrapperInner {
     width: 100%;
-  }
-}
-
-@media (max-width: 900px) {
-  .question {
-    font-size: 1.25rem;
-  }
-  .QuestionsHeading {
-    font-size: 1.5rem;
   }
 }

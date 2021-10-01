@@ -1,7 +1,6 @@
 .navbarWrapper {
   width: 100%;
-  height: max(12vh, 120px);
-  margin: 80px 0 25px 0;
+  margin: 50px 0 25px 0;
 }
 
 .navbarColumn {
@@ -12,18 +11,17 @@
 }
 
 .navbarInner {
+  justify-content: space-between;
   margin-top: 30px;
   width: 90%;
 }
 
 .navLeft {
-  width: 30%;
   font-weight: 500;
   color: #231f20;
 }
 
 .navRight {
-  width: 70%;
   justify-content: space-between;
 }
 
@@ -34,10 +32,16 @@
 }
 
 .footerText {
+  margin: 25px 0 0;
   width: 80%;
   height: 100%;
-
   text-align: center;
   color: lightslategrey;
   font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .navbarInner {
+    flex-direction: column;
+  }
 }

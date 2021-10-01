@@ -5,25 +5,16 @@ export const programs_shopper = {
     {
       title: "Make money with us",
       body: [
-        "Shopper Opportunities",
-        "Shopper Opportunities",
-        "Shopper Opportunities",
-        "Shopper Opportunities",
-        "Shopper Opportunities",
+        "Opportunities",
+        "Opportunities",
+        "Opportunities",
+        "Opportunities",
+        "Opportunities",
       ],
     },
     {
       title: "Top cities",
-      body: [
-        "Chicago",
-        "Chicago",
-        "Chicago",
-        "Chicago",
-        "Chicago",
-        "Chicago",
-        "Chicago",
-        "Chicago",
-      ],
+      body: ["Chicago", "Chicago", "Chicago", "Chicago", "Chicago"],
     },
     {
       title: "More cities",
@@ -31,16 +22,7 @@ export const programs_shopper = {
     },
     {
       title: "Shopper help",
-      body: [
-        "Contact",
-        "Contact",
-        "Contact",
-        "Contact",
-        "Contact",
-        "Contact",
-        "Contact",
-        "Contact",
-      ],
+      body: ["Contact", "Contact", "Contact", "Contact", "Contact"],
     },
   ],
 };
