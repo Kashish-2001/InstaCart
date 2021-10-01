@@ -45,3 +45,11 @@
   font-size: 1rem;
   color: rgba(0, 0, 12, 0.6);
 }
+
+.programsBoxLink:hover{
+  text-decoration: underline;
+}
+
+.os{
+  cursor: pointer;
+}

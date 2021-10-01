@@ -22,11 +22,11 @@ const Programs = ({ programs }) => {
             <div>
               <img src={iosLogo} alt="iosLogo" />
             </div>
-            <div>IOS</div>
+            <div className={styles.os}>IOS</div>
             <div>
               <img src={playstoreLogo} alt="playstoreLogo" />
             </div>
-            <div>Android</div>
+            <div className={styles.os}>Android</div>
           </div>
         </div>
         <div className={`${styles.programsRight} center`}>
